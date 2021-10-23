@@ -29,3 +29,4 @@ kubectl create -f ingress.yaml
 curl -kL  http://127.0.0.1/music
 
 thats it!
+
