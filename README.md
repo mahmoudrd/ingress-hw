@@ -12,13 +12,13 @@ creating web app for spring-music image
 1. create a new deployment with the name spring-music by running the command line in the cmd:
 kubectl create deployment spring-music --image=yanivomc/spring-music:latest
 
-2.verify it's working with the command line:
+2. verify it's working with the command line:
 kubectl get deployments
 
-3.expose the deployment to get access to the the service from outside the Kubernetes virtual network:
+3. expose the deployment to get access to the the service from outside the Kubernetes virtual network:
 kubectl expose deployment spring-music --port=8090 --target-port=8080
 
-4.install the nginx ingress-controller in your cluster to access the app with your desired address:
+4. install the nginx ingress-controller in your cluster to access the app with your desired address:
 minikube addons enable ingress
 
 5. clone this project to get the ingress.yaml file:
