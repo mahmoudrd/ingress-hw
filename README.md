@@ -2,10 +2,10 @@
 creating web app for spring-music image
 
 # prequests:
-docker
-kubernetes 
-ingress
-minikube
+-docker
+-kubernetes 
+-ingress
+-minikube
 
 # steps:
 
@@ -22,6 +22,7 @@ kubectl expose deployment spring-music --port=8090 --target-port=8080
 minikube addons enable ingress
 
 5. clone this project to get the ingress.yaml file:
+git clone https://github.com/mahmoudrd/ingress-hw.git
 
 6. create the Ingress in your cluster:
 kubectl create -f ingress.yaml
