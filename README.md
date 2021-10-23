@@ -27,7 +27,7 @@ git clone https://github.com/mahmoudrd/ingress-hw.git
 6. create the Ingress in your cluster:
 kubectl create -f ingress.yaml
 
-7. now run your web app using this commandline:
+7. now run your web app using this command line:
 curl -kL  http://127.0.0.1/music
 
 thats it!
